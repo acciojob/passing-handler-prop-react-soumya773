@@ -31,9 +31,10 @@ const App = () => {
 
   return (
     <div id="master">
-      <h5 className="heading">{/* display title here */}</h5>
+      <h5 className="heading">{title}</h5>
 
-      <div className="row">
+
+      <div className="row" id="wrapper">
         {colourConfig.map((config, index) => (
           <ColourSelector key={config.key} config={config} selectNextBackground={selectNextBackground} />
         ))}
